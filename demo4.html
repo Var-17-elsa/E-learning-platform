@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header class="header">
+        <h1>E-Learning Hub</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="course-list">
+            <h2>Available Courses</h2>
+            <div class="course-card" data-course-id="1">
+                <h3>Introduction To Wed Development</h3>
+                <p>Learn the basics of HTML,CSS, and JavaScript</p>
+                <button class="view-course-btn">View Course</button>
+            </div>
+            <div class="course-card" data-course-id="2">
+                <h3>Python For Data Science</h3>
+                <p>Master python Libraries like Pandas and NumPy</p>
+                <button class="view-course-btn">View Course</button>
+            </div>
+        </section>
+        <section class="Course-details hidden">
+            <h2 id="Course-title"></h2>
+            <p id="course-description"></p>
+            <div class="video-container">
+                <iframe src="course-video" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="progress-bar-container">
+                <p>Your progress:</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0%;"></div>
+                </div>
+            </div>
+            <div class="video-controls">
+                <button id="mark-complete-btn">Mark as Complete</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy;2025 E-leraning Hub</p>
+    </footer>
+    <script src="script4.js"></script>
+</body>
+</html>

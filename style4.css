@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1{
+    margin: 0;
+}
+
+.header nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.main-content {
+    padding: 25px;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.course-list, .course-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(252, 102, 102, 0.1);
+    margin-bottom: 25px;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.view-course-btn, #mark-complete-btn{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.hidden{
+    display: none;
+}
+
+.video-container {
+    margin-top: 25px;
+    position: relative;
+    padding-bottom: 56.25%; /*16:9 aspect ratio*/
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.progress-bar-container{
+    margin-top: 25px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 25px;
+}
+
+.progress{
+    background-color: #28a745;
+    height: 100%;
+    transition: width 0.4s ease;
+}
+
+.footer{
+    text-align: center;
+    padding: 25px;
+    background-color: #333;
+    color: #fff;
+}
